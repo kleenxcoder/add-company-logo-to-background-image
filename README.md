@@ -6,6 +6,9 @@
 ### Download ImageMagic
 > Go to https://imagemagick.org/script/download.php#windows and download the latest portable version https://imagemagick.org/download/binaries/ImageMagick-7.0.10-53-portable-Q16-x64.zip and unzip it to ./bin/imagemagick
 
+# Documentation
+> https://imagemagick.org/script/composite.php
+
 # Credits to
 
 ## Background Image
