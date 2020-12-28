@@ -1,7 +1,6 @@
-REM .\..\bin\imagemagick\magick composite -gravity center logo.png  rose: background.jpg
 .\..\bin\imagemagick\magick ^
-	background.jpg ^
-	logo.png ^
-	-gravity center ^
+	.\..\image\background.jpg ^
+	.\..\image\logo.png ^
+	-geometry +2875+300 ^
 	-composite ^
 	output.png
