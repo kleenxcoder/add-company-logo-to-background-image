@@ -5,3 +5,6 @@
 
 ### Download ImageMagic
 > Go to https://imagemagick.org/script/download.php#windows and download the latest portable version https://imagemagick.org/download/binaries/ImageMagick-7.0.10-53-portable-Q16-x64.zip and unzip it to ./bin/imagemagick
+
+# Credits to
+Photo by [Emiliano Arano](https://www.pexels.com/@earano?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) from [Pexels](https://www.pexels.com/photo/ocean-water-wave-photo-1295138/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)
