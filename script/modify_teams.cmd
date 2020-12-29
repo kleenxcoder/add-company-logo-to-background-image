@@ -11,12 +11,17 @@
 @SET TEAMS_LOCATION=%APPDATA%\Microsoft\Teams\Backgrounds
 @ECHO %COMPANY_NAME%_*.* > exclude_list.txt
 
-@REM XCOPY /Y %TEAMS_LOCATION%\*.* .\%COMPANY_NAME%_*.* /EXCLUDE:exclude_list.txt
+@REM copy all files from teams location
 for %%j in (%TEAMS_LOCATION%\*.*) do (
-	echo D|XCOPY /Y %%j .\%COMPANY_NAME%_%%~nxj /EXCLUDE:exclude_list.txt
+	@REM exclude files having company name
+	(Echo "%%j" | FIND /I "%COMPANY_NAME%_" 1>NUL) || (
+		@REM copy files and add company name as prefix
+		echo D|XCOPY /Y  %%j .\%COMPANY_NAME%_%%~nxj
+	)
 )
 
 @ECHO ===============================================
+@REM add logo to image
 for /r %%i in (%COMPANY_NAME%_*.*) do (
 	.\..\bin\imagemagick\magick ^
 	%%i ^
