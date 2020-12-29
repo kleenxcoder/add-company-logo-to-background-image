@@ -1,2 +1,5 @@
-# Ignore result ouput file
-output.png
+# Ignore
+*.png
+*.jpg
+*.jpeg
+exclude_list.txt
